@@ -6,16 +6,17 @@ function renderNotes() {
 
     notes.forEach((note, index) => {
         const noteItem = document.createElement('li');
+        noteItem.classList.add('note-item');
 
         const noteName = document.createElement('strong');
         noteName.textContent = note.name;
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.style.marginLeft = '10px';
+        deleteButton.textContent = 'X';
+        deleteButton.classList.add('delete-button'); // Add a class for styling
         deleteButton.addEventListener('click', () => {
             deleteNote(index);
-        })
+        });
 
         noteItem.appendChild(noteName);
         noteItem.appendChild(deleteButton);
@@ -53,7 +54,6 @@ function handleFormSubmit(event) {
 function loadNotesFromStorage() {
     const savedNotes = localStorage.getItem('notes');
     if (savedNotes) {
-        console.log('Notes found');
         notes = JSON.parse(savedNotes);
         renderNotes();
     }
