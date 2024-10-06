@@ -1,0 +1,151 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#notes-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#notes-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+#note-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#note-content-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#note-name-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.delete-button {
+    margin-left: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+.btn {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: #28a745;
+}
+
+.submit:hover {
+    background-color: #218838;
+}
+
+.cancel {
+    background-color: #7a7a7a;
+}
+
+.cancel:hover {
+    background-color: #9f9f9f;
+}
+
+#add-note-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
+    border: none;
+    border-radius: 100%;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.form-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cancel-button {
+    color: grey;
+}
