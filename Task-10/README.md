@@ -1,3 +1,3 @@
 ## Instructions
 
-#### [Task 10 - Creating Note Model](https://docs.google.com/document/d/19dRC-6qgPyeDsXW3ja-ubgdrGe1v1I0FkVbnBcO6X8g/edit?usp=sharing)
+#### [Task 10 - Creating Note Model](https://docs.google.com/document/d/1QmwApiodrt5bU2hAMQwuSGg6aK95HA8eCQ91ZzFpvlg/edit?usp=sharing)
